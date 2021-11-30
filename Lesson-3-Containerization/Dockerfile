@@ -12,7 +12,7 @@ COPY . nlib /app/
 RUN pip install --upgrade pip &&\
     pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Expose port 80
+# Expose port 80 this is the host port not the container port
 EXPOSE 80
 
 # Run app.py at container launch
